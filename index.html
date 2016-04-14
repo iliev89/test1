@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Contact Form</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready( function(){
+				$('#btnClose').click(function(){
+					$('#loginWrap').fadeOut(500);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		
+		<div class="fullPageContaniner">
+			<div class="verticalContainer">
+				<div id="loginWrap">
+					<form id="contact_form" action="" method="">
+							
+						<div class="clear"></div>
+			
+						<div class="grid col-1">
+							<h2>Inquiry Form</h2>
+							<input id="btnClose" type="button" name="btnClose" value="x" />
+						</div>
+						
+						<div class="clear"></div>
+						
+						<div class="grid col-3">
+							<label>Name</label>
+							<input type="text" name="name" />
+						</div>
+						<div class="grid col-3">
+							<label>Company</label>
+							<input type="text" name="company" />
+						</div>
+						<div class="grid col-3 fit">
+							<label>Position</label>
+							<input type="text" name="position" />
+						</div>
+
+						<div class="grid col-2">
+							<label>Phone</label>
+							<input type="tel" name="phone" />
+						</div>
+						<div class="grid col-2 fit">
+							<label>Email</label>
+							<input type="email" name="email" />
+						</div>
+
+						<div class="grid col-1">
+							<label>Message</label>
+							<textarea></textarea>
+						</div>
+						
+						<div class="grid col-3">
+							<input id="btnSubmit" type="submit" value="send Message" />
+						</div>
+				
+						<div class="clear"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	
+	</body>
+</html>
